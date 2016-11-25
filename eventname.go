@@ -27,6 +27,10 @@ import (
 // library, in that it fits the `Marshaler` interface and the
 // `Unmarshaler` interface.
 //
+// (That means you can write values int it with the json.Unmarshal functions.)
+//
+// (And means you can read values from it with the sql.Marshal functions.)
+//
 // In addition to that, it is also compatible with the fmt.Printf,
 // fmt.Sprintf, etc family of functions, in it fits the `Stringer`
 // interface from "fmt".
