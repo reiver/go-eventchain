@@ -11,6 +11,11 @@ import (
 
 // EventName represents the name of an event.
 //
+// EventName exists, for representing event names, rather that just
+// using (the built-in Go type) `string`, to prevent invalid event
+// names from being used. (Either through a typo, a bug, or
+// intentionally.)
+//
 // It is compatible with the built-in Golang "database/sql"
 // library, in that it fits the `Scanner` interface
 // from "database/sql", and fits the `Valuer` interface
