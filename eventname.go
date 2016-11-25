@@ -35,9 +35,10 @@ import (
 // fmt.Sprintf, etc family of functions, in it fits the `Stringer`
 // interface from "fmt".
 type EventName interface {
+	fmt.Stringer
+	json.Marshaler
 	sql.Scanner
 	sqldriver.Valuer
-	fmt.Stringer
 }
 
 
