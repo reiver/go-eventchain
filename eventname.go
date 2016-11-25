@@ -42,6 +42,7 @@ import (
 type EventName interface {
 	fmt.Stringer
 	json.Marshaler
+	json.Unmarshaler
 	sql.Scanner
 	sqldriver.Valuer
 }

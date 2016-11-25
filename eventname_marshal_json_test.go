@@ -6,7 +6,7 @@ import (
 )
 
 
-func TestEventNameMarshalJson(t *testing.T) {
+func TestEventNameMarshalJSON(t *testing.T) {
 
 	tests := []struct{
 		EventName EventName
