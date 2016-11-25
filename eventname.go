@@ -16,6 +16,13 @@ import (
 // from "database/sql", and fits the `Valuer` interface
 // from "database/sql/driver".
 //
+// (That means you can write values into it with the sql.Rows.Scan
+// and sql.Row.Scan methods.)
+//
+// (And means you can read values from it with the sql.DB.Exec, sql.DB.Query,
+// sql.DB.QueryRow, sql.Stmt.Exec, sql.Stmt.Query, sql.Stmt.QueryRow,
+// sql.Tx.Exec, sql.Tx.Query, and sql.Tx.QueryRow methods.)
+//
 // It is also compatible with the built-in Golang "encoding/json"
 // library, in that it fits the `Marshaler` interface and the
 // `Unmarshaler` interface.
