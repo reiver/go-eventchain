@@ -7,7 +7,9 @@ import (
 
 
 var (
-	errInternalError = errors.New("Internal Error")
-	errNotFound      = internalNotFoundComplainer{}
-	errNilReceiver   = errors.New("Nil Receiver")
+	errBadRequest         = errors.New("Bad Reqest")
+	errBadRequestNilEvent = errors.New("Bad Request: Nil Event")
+	errInternalError      = errors.New("Internal Error")
+	errNotFound           = internalNotFoundComplainer{}
+	errNilReceiver        = errors.New("Nil Receiver")
 )
