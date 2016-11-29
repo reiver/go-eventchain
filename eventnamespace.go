@@ -101,9 +101,9 @@ func (ns *BasicEventNamespace) MustDeclare(names ...string) EventNamespace {
 }
 
 
-// Declare initializes a name space, by declaring the names that exist in it.
+// Declare initializes a namespace, by declaring the names that exist in it.
 //
-// Note that Declare only "allows" you to specify the names in the name space
+// Note that Declare only "allows" you to specify the names in the namespace
 // once.
 //
 // On all invocations after the first one, it will return an error.
