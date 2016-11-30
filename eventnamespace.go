@@ -40,8 +40,12 @@ import (
 //
 // In that example, our event namespace has 3 events: ATE_AN_APPLE, ATE_A_BANANA, ATE_A_CHERRY.
 type EventNamespace interface {
+
 	EventName(string) (EventName, error)
+
+	// Rand returns a random EventName from the namespace.
 	Rand() (EventName, error)
+
 	Validate(string) error
 }
 

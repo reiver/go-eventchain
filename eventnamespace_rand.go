@@ -12,6 +12,7 @@ var (
 )
 
 
+// Rand returns a random EventName from the namespace.
 func (ns *BasicEventNamespace) Rand() (EventName, error) {
 	if nil == ns {
 		return nil, errNilReceiver
