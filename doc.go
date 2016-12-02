@@ -1,7 +1,7 @@
 /*
 Package eventchain provides basic building blocks for doing Event Sourcing and Log-Driven Development.
 
-Two concepts that this package has are: "data stores" and "event stores".
+Three concepts that this package has are: "data stores", "event stores", and "event chains"
 
 At the high level, an 'event store' contains the events for a single thing, and a 'data store' contains
 one or more 'event stores'.
