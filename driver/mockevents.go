@@ -7,6 +7,10 @@ type MockEvents struct {
 }
 
 
+func (events *MockEvents) Close() error {
+	return nil
+}
+
 func (events *MockEvents) Err() error {
 	return nil
 }
