@@ -180,6 +180,11 @@ func TestMock(t *testing.T) {
 				continue
 			}
 
+			if err := events.Close(); nil != err {
+				t.Errorf("For test #%d, did not expect an error. but actually got one: (%T) %v", testNumber, err, err)
+				continue
+			}
+
 			if expected := len(mockedEvents); expected != actual {
 				t.Errorf("For test #%d, expected %d, but actually got %d.", testNumber, expected, actual)
 				continue
